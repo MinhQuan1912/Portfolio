@@ -15,10 +15,12 @@
             </div>
 
             <div class="flex flex-col gap-2">
-               <div class="flex gap-2 items-center text-gray-600 dark:text-gray-dark-600">
+               <a href="https://www.google.com/maps/search/?api=1&query=O+Cho+Dua+Ha+Noi" target="_blank"
+                  rel="noopener noreferrer" class="flex gap-2 items-center text-gray-600 dark:text-gray-dark-600 hover:text-blue-600 transition duration-200 ease-in-out">
                   <IconsAddress />
                   <p class="leading-6">O Cho Dua, Ha Noi</p>
-               </div>
+                  <UIcon name="material-symbols:link"/>
+               </a>
                <div class="flex gap-2 items-center text-gray-600 dark:text-gray-dark-600">
                   <IconsDot />
                   <p class="leading-6">Available for new projects</p>
@@ -27,7 +29,7 @@
 
             <div class="flex gap-1 items-center">
                <a href="https://github.com/MinhQuan1912" target="_blank" rel="noopener noreferrer">
-                  <IconsGithub class="text-gray-600 dark:text-gray-dark-600" />
+                  <IconsGithub class="text-gray-600 dark:text-gray-dark-600 hover:text-blue-600" />
                </a>
             </div>
          </div>
