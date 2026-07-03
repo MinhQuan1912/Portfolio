@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+@import "../theme/breakpoint.css";
+@import "../theme/color.css";
+@theme {
+   --font-Inter: "Inter";
+}
+
+body {
+   font-family: var(--font-Inter);
+}
+
+button {
+   cursor: pointer;
+   transition: all 0.3s ease-in-out;
+}
+
+html {
+   scroll-behavior: smooth;
+   
+}
