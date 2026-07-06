@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-  modules: ["@nuxt/ui", "@nuxt/image", "@vueuse/nuxt"],
+  modules: ["@nuxt/ui", "@nuxt/image", "@vueuse/nuxt", "@nuxtjs/color-mode"],
   css: ["~/assets/css/main.css"],
   app: {
     head: {
@@ -20,5 +20,10 @@ export default defineNuxtConfig({
     optimizeDeps: {
       include: ["swiper/modules", "swiper/vue"],
     },
+  },
+  colorMode: {
+    preference: "system",
+    fallback: "light",
+    classSuffix: "",
   },
 });
