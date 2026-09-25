@@ -39,6 +39,12 @@
                         <IconsLink />
                         Live Demo
                      </NuxtLink>
+                     <NuxtLink v-if="project.link.production" :to="project.link.production" target="_blank" rel="noopener noreferrer"
+                        class="flex gap-2 items-center py-1.5 px-4 rounded-xl border-0 bg-gray-900 dark:bg-gray-dark-900 text-gray-50 dark:text-gray-dark-50 font-medium leading-6 
+                        hover:text-gray-dark-50 hover:bg-gray-dark-900 dark:hover:text-gray-50 dark:hover:bg-gray-900 transition duration-200 ease-in-out">
+                        <IconsLink />
+                        Production
+                     </NuxtLink>
                   </div>
 
                </div>
@@ -66,12 +72,13 @@ const list = [
    },
    {
       images: ['/images/project2/image1.png', '/images/project2/image2.png', '/images/project2/image3.png', '/images/project2/image4.png'],
-      name: 'PHTS - Bankruptcy & Asset Liquidation Portal',
+      name: 'PHPS - Bankruptcy & Asset Liquidation Portal',
       description: 'An information portal for a Vietnamese asset management and liquidation firm, made up of three separate applications: a bilingual (VI/EN) SSR public website, an admin CMS, and a REST API server. It features a block-based rich text editor, scheduled publishing, bankruptcy notices filtered by type and court, S3/MinIO media storage with direct video uploads via presigned URLs, JWT authentication, visitor analytics, and built-in SEO checks for articles.',
       technologies: ['Nuxt', 'NestJs', 'PostgreSQL', 'Prisma', 'Tailwind CSS', 'TypeScript', 'AWS S3'],
       link: {
          github: 'https://github.com/MinhQuan1912/test-phuchoiphasan',
-         live: ''
+         live: '',
+         production: 'https://phuchoiphasan.vn'
       }
    }
 ]
